@@ -2,20 +2,19 @@ font-family = JetBrains Mono
 #font-family = Iosevka Nerd Font
 # font-family = SFMono Nerd Font 
 font-size = 18
-theme = Desert
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
-window-padding-balance = true 
+window-padding-balance = true
+window-padding-x = 0
+window-padding-y = 0
 window-save-state = always
 macos-titlebar-style=transparent
 # foreground = d4be98
-
 # keybindings
-
 
 # tabs 
 
