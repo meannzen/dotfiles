@@ -1,7 +1,7 @@
 # ~/.config/starship.toml
 
 # Use custom format
-#format = '''>'''
+#format = '''->'''
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
