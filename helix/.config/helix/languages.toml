@@ -76,17 +76,25 @@ auto-format = true
 [[language]]
 name = "json"
 # formatter = { command = "prettier", args = [ "--parser", "json" ] }
-formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
+language-servers = [ "vscode-json-language-server" ]
 auto-format = true
 
-[[language]]
+ [[language]]
 name = "html"
 language-servers = ["vscode-html-language-server", "emmet-ls"]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
-
+     
 [[language]]
 name = "css"
-language-servers = ["vscode-css-language-server", "emmet-ls"]
+language-id = "css"
+scope = "source.css"
+file-types = ["css"]
+language-servers = [ "vscode-css-language-server","tailwindcss-ls", "scls"]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = true
+
+[language-server.tailwindcss-ls]
+# command = "tailwindcss-language-server"
+# args = [ "--stdio" ]
+config = {userLanguages = { templ = "html", "*.templ" = "html" } }
