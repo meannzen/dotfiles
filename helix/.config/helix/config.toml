@@ -1,21 +1,30 @@
-theme = "onedark"
+theme = "rasmus"
 
 [editor]
 line-number = "relative"
 cursorline = true
-bufferline = "multiple"
+true-color = true
 mouse = false
+undercurl = true
 color-modes = true
 end-of-line-diagnostics = "hint"
+
+gutters = ["diagnostics", "spacer", "diff", "line-numbers", "spacer", "spacer"]
 
 [editor.statusline]
 mode.normal = ""
 mode.insert = "INSERT"
 mode.select = "SELECT"
-left = ["mode", "spinner", "diagnostics"]
+right = ["diagnostics", "version-control", "position", "file-encoding"]
 
 [editor.cursor-shape]
 insert = "bar"
+select = "underline"
+
+[editor.indent-guides]
+render = false
+charactor = "╎"
+#skip-levels = 1
 
 [editor.auto-pairs]
 '(' = ')'
@@ -26,10 +35,22 @@ insert = "bar"
 '<' = '>'
 
 [editor.inline-diagnostics]
-# Minimum severity to show a diagnostic on the primary cursor's line.
-# Note that `cursor-line` diagnostics are hidden in insert mode.
-#cursor-line = "error"
-# Minimum severity to show a diagnostic on other lines:
-# other-lines = "error"
-#[editor.whitespace]
-#render = "all"
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+tab = "→"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.file-picker]
+hidden = false
+git-global = false
+
+[keys.normal]
+y = "yank_joined_to_clipboard"
+
