@@ -1,0 +1,9 @@
+"ui.background" = { bg = "#000000" }
+"ui.text" = { fg = "#00FF00" }
+"ui.cursor" = { fg = "#000000", bg = "#00FF00", modifiers = ["bold"] }
+"ui.selection" = { bg = "#006600", fg = "#FFFFFF" }
+"keyword" = { fg = "#00FF00", modifiers = ["bold"] }
+"string" = { fg = "#00FF00" }
+"comment" = { fg = "#008800" }
+"ui.statusline" = { fg = "#00FF00", bg = "#000000" }
+"ui.menu" = { fg = "#00FF00", bg = "#000000" }

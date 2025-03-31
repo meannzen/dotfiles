@@ -126,3 +126,5 @@ alias vim=nvim
 
 # Created by `pipx` on 2025-01-04 04:39:22
 export PATH="$PATH:/home/senmeann/.local/bin"
+export TERM=xterm
+. "/Users/macbook/.deno/env"

@@ -1,0 +1,10 @@
+# retro.toml - Classic green CRT vibe
+"ui.background" = { bg = "#000000" }  # Black background
+"ui.text" = { fg = "#00FF00" }        # Bright green text
+"ui.cursor" = { fg = "#000000", bg = "#00FF00", modifiers = ["bold"] }  # Green block cursor
+"ui.selection" = { bg = "#00AA00", fg = "#000000" }  # Darker green selection
+"keyword" = { fg = "#00FF00", modifiers = ["bold"] }
+"string" = { fg = "#00FF00" }
+"comment" = { fg = "#008800" }        # Dim green for comments
+"ui.statusline" = { fg = "#00FF00", bg = "#000000" }
+"ui.menu" = { fg = "#00FF00", bg = "#000000" }
