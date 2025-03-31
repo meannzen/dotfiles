@@ -1,5 +1,4 @@
-theme = "rasmus"
-
+theme = "onedark"
 [editor]
 line-number = "relative"
 cursorline = true

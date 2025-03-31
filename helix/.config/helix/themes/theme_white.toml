@@ -1,0 +1,9 @@
+"ui.background" = { bg = "#000000" }  # Black background
+"ui.text" = { fg = "#FFFFFF"}        # White text
+"ui.cursor" = { fg = "#000000", bg = "#00FF00", modifiers = ["bold"] }  # Green cursor
+"ui.selection" = { bg = "#FFFFFF", fg = "#000000" }
+"keyword" = { fg = "#FFFFFF" }
+"string" = { fg = "#f2ffe6" }
+"comment" = { fg = "#AAAAAA" , modifiers = ["italic", "bold"]}        # Light gray for comments
+#"function" =  { fg = "#FFFFFF", modifiers = ["bold"] }
+"constant" = {fg="#fff7e6"}
