@@ -9,10 +9,14 @@ This repository contains my personal configuration files (dotfiles) managed usin
 ### **1. Install GNU Stow**
 GNU Stow is a symlink manager that helps keep dotfiles organized.
 
+### Arch
 ```bash
-sudo apt update && sudo apt install stow -y
+sudo pacman -S stow
 ```
-
+### MacOs
+```bash
+brew install stow
+```
 ### **2. Clone the Repository**
 ```bash
 git clone git@github.com:yourusername/dotfiles.git ~/dotfiles
