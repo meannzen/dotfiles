@@ -31,8 +31,6 @@ Each application's configuration is stored in a separate folder inside `~/dotfil
 ### **Example Directory Structure:**
 ```
 ~/dotfiles/
-  ├── bash/
-  │   └── .bashrc
   ├── vim/
   │   └── .vimrc
   ├── git/
