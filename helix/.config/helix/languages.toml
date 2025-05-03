@@ -98,3 +98,11 @@ auto-format = true
 # command = "tailwindcss-language-server"
 # args = [ "--stdio" ]
 config = {userLanguages = { templ = "html", "*.templ" = "html" } }
+
+[[language]]
+name = "c-sharp"
+language-servers = ["omnisharp"]
+
+[language-server.omnisharp]
+command = "dotnet"
+args = ["/Users/macbook/.local/bin/omnisharp/OmniSharp.dll", "-lsp"]
