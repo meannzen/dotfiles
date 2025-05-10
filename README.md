@@ -180,8 +180,3 @@ chmod +x ~/dotfiles/setup.sh
 ./setup.sh
 ```
 
----
-
-## **Done! 🎉**
-Your dotfiles are now neatly managed using GNU Stow. 🚀
-
