@@ -3,4 +3,5 @@ if status is-interactive
 end
 set -g PATH /opt/homebrew/bin $PATH
 set -g PATH /opt/homebrew/bin/nvim $PATH
-starship init fish | source
+#starship init fish | source
+alias vim=nvim

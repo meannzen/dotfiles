@@ -1,20 +1,10 @@
-#font-size = 18
-font-family = Monaspace Neon
-#font-family = Space Mono
-#font-family = IBM Plex Mono
-#font-family = Courier New
-#font-family = SFMono-Regular
-#font-family = Iosevka Nerd Font
-#font-family = SFMono Nerd Font 
-font-size = 18
+theme = GruvboxDark
+font-family = Monaspace Neon Var
+font-size = 20
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
-# Green-on-black CRT style
-#background = 000000
-#foreground = 00ff00
 cursor-color = 00ff00
 selection-background = 006600
-#selection-foeground = ffffff
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
@@ -23,8 +13,4 @@ window-padding-x = 0
 window-padding-y = 0
 window-save-state = always
 macos-titlebar-style=transparent
-# foreground = d4be98
-# keybindings
-
-# tabs 
 
