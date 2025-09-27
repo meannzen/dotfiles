@@ -1,0 +1,18 @@
+[window]
+
+opacity = 1
+
+padding.x = 0
+padding.y = 0
+
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+normal.family = "Monaspace Neon Var"
+#normal  = {  family= "Courier New",  style="Regular"}
+#normal.family = "IBM Plex Mono"
+#normal.family = "JetBrains Mono"
+#normal.family = "Space Mono"
+size = 16.0
+
