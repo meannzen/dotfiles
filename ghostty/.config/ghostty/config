@@ -1,6 +1,12 @@
-theme = GruvboxDark
-font-family = Monaspace Neon Var
-font-size = 20
+#font-size = 16
+font-family = Monaspace Neon
+#font-family = Space Mono
+#font-family = IBM Plex Mono
+#font-family = Courier New
+#font-family = SFMono-Regular
+#font-family = Iosevka Nerd Font
+#font-family = SFMono Nerd Font 
+font-size = 18
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 cursor-color = 00ff00
