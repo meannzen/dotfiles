@@ -9,7 +9,7 @@ decorations = "Full"
 decorations_theme_variant = "Dark"
 
 [font]
-normal.family = "Monaspace Neon Var"
+#normal.family = "Monaspace Neon Var"
 #normal  = {  family= "Courier New",  style="Regular"}
 #normal.family = "IBM Plex Mono"
 #normal.family = "JetBrains Mono"
