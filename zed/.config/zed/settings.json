@@ -1,0 +1,91 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "minimap": {
+    "thumb_border": "right_open"
+  },
+  "centered_layout": {
+    "left_padding": 0.19999980926513672
+  },
+  "bottom_dock_layout": "contained",
+  "debugger": {
+    "button": true
+  },
+  "search": {
+    "button": false
+  },
+  "zoomed_padding": true,
+  "preview_tabs": {
+    "enabled": true
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show": true
+  },
+  "scrollbar": {
+    "show": "never",
+    "search_results": true
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "on_last_window_closed": "quit_app",
+  "status_bar": {
+    "active_language_button": false,
+    "cursor_position_button": true
+  },
+  "terminal": {
+    "button": true
+  },
+  "diagnostics": {
+    "button": true
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_user_picture": false,
+    "show_onboarding_banner": false,
+    "show_branch_name": false,
+    "show_project_items": false
+  },
+  "project_panel": {
+    "button": true
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "code_actions": false,
+    "agent_review": false,
+    "selections_menu": false,
+    "quick_actions": false
+  },
+  "cursor_shape": "bar",
+  "agent_buffer_font_size": 14.0,
+  "buffer_font_weight": 500.0,
+  "ui_font_weight": 500.0,
+  "ui_font_family": "Noto Sans Mono",
+  "buffer_font_family": "Noto Sans Mono",
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "agent": {
+    "default_profile": "minimal",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "model_parameters": []
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "GitHub Dark Default"
+  },
+  "vim_mode": true
+}
