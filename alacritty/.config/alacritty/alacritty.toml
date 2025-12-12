@@ -12,7 +12,7 @@ decorations_theme_variant = "Dark"
 #normal.family = "Monaspace Neon Var"
 #normal  = {  family= "Courier New",  style="Regular"}
 #normal.family = "IBM Plex Mono"
-#normal.family = "JetBrains Mono"
+#normal.family = "JetBrainsMono Nerd Font"
 #normal.family = "Space Mono"
-size = 16.0
+size = 18.0
 
