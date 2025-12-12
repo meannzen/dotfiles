@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_edit_predictions": false,
   "minimap": {
     "thumb_border": "right_open"
   },
@@ -18,7 +19,9 @@
     "button": true
   },
   "search": {
-    "button": false
+    "case_sensitive": false,
+    "whole_word": false,
+    "button": true
   },
   "zoomed_padding": true,
   "preview_tabs": {
@@ -66,16 +69,17 @@
   },
   "cursor_shape": "bar",
   "agent_buffer_font_size": 14.0,
-  "buffer_font_weight": 500.0,
+  "buffer_font_weight": 700.0,
   "ui_font_weight": 500.0,
   "ui_font_family": "Noto Sans Mono",
-  "buffer_font_family": "Noto Sans Mono",
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "buffer_font_family": "Noto Sans",
+  "icon_theme": "Material Icon Theme",
   "agent": {
-    "default_profile": "minimal",
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "provider": "openai",
+      "model": "gpt-3.5-turbo"
     },
     "model_parameters": []
   },
@@ -85,7 +89,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "GitHub Dark Default"
+    "dark": "One Dark"
   },
   "vim_mode": true
 }
