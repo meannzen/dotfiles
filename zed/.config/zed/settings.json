@@ -73,13 +73,17 @@
   "ui_font_weight": 500.0,
   "ui_font_family": "Noto Sans Mono",
   "buffer_font_family": "Noto Sans",
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
   "agent": {
     "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "openai",
-      "model": "gpt-3.5-turbo"
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet-latest"
     },
     "model_parameters": []
   },
@@ -87,7 +91,7 @@
   "ui_font_size": 16,
   "buffer_font_size": 15.0,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "One Dark"
   },
