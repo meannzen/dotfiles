@@ -4,8 +4,6 @@ auto-format = false
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
-#formatter = { command = "cargo", args = [ "fmt"] }
-#auto-format = true
 
 [language-server.rust-analyzer.config]
 inlayHints.bindingModeHints.enable = false
@@ -48,38 +46,33 @@ provideFormatter = true
 [[language]]
 name = "typescript"
 language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
- formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
-#formatter = { command = "dprint", args = ["fmt", "--stdin", "typescript"] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
 language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
 formatter = { command = "dprint", args = ["fmt", "--stdin", "tsx"] }
 auto-format = true
 
 [[language]]
 name = "javascript"
 language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
 formatter = { command = "dprint", args = ["fmt", "--stdin", "javascript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
 language-servers = ["typescript-language-server", "eslint", "emmet-ls"]
-# formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
 formatter = { command = "dprint", args = ["fmt", "--stdin", "jsx"] }
 auto-format = true
 
 [[language]]
 name = "json"
-# formatter = { command = "prettier", args = [ "--parser", "json" ] }
 language-servers = [ "vscode-json-language-server" ]
 auto-format = true
 
- [[language]]
+[[language]]
 name = "html"
 language-servers = ["vscode-html-language-server", "emmet-ls"]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
@@ -95,14 +88,30 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = true
 
 [language-server.tailwindcss-ls]
-# command = "tailwindcss-language-server"
-# args = [ "--stdio" ]
-config = {userLanguages = { templ = "html", "*.templ" = "html" } }
+config = { userLanguages = { templ = "html", "*.templ" = "html" } }
 
+# ── C / C++ ──────────────────────────────────────────
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+formatter = { command = "clang-format" }
+auto-format = true
+
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+formatter = { command = "clang-format" }
+auto-format = true
+
+[language-server.clangd]
+command = "clangd"
+args = ["--background-index", "--clang-tidy"]
+
+# ── C# ──────────────────────────────────────────────
 [[language]]
 name = "c-sharp"
 language-servers = ["omnisharp"]
 
 [language-server.omnisharp]
 command = "dotnet"
-args = ["/Users/macbook/.local/bin/omnisharp/OmniSharp.dll", "-lsp"]
+args = ["$HOME/.local/bin/omnisharp/OmniSharp.dll", "-lsp"]

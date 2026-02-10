@@ -1,3 +1,5 @@
-if test "$(uname)" = Drawin
-    source "/Users/macbook/.deno/env.fish"
+if test "$(uname)" = Darwin
+    if test -f "$HOME/.deno/env.fish"
+        source "$HOME/.deno/env.fish"
+    end
 end

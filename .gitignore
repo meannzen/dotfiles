@@ -1,1 +1,15 @@
+# Tmux plugins (managed by tpm)
 tmux/.config/tmux/plugins
+
+# macOS
+.DS_Store
+
+# Editor swap/backup files
+*.swp
+*.swo
+*~
+*.bak
+
+# Machine-generated fish files
+fish/.config/fish/fish_variables
+fish/.config/fish/conf.d/fish_frozen_*.fish

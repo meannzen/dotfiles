@@ -1,11 +1,4 @@
-#font-size = 16
 font-family = Monaspace Neon
-#font-family = Space Mono
-#font-family = IBM Plex Mono
-#font-family = Courier New
-#font-family = SFMono-Regular
-#font-family = Iosevka Nerd Font
-#font-family = SFMono Nerd Font 
 font-size = 18
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
@@ -18,5 +11,4 @@ window-padding-balance = true
 window-padding-x = 0
 window-padding-y = 0
 window-save-state = always
-macos-titlebar-style=transparent
-
+macos-titlebar-style = transparent

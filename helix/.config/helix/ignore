@@ -2,4 +2,4 @@
 !.github/
 !.gitignore
 !.gitattributes
-! node_modules
+!node_modules

@@ -22,7 +22,7 @@ select = "underline"
 
 [editor.indent-guides]
 render = false
-charactor = "╎"
+character = "╎"
 #skip-levels = 1
 
 [editor.auto-pairs]
