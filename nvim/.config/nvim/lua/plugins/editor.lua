@@ -25,7 +25,7 @@ return {
         width_focus = 30,
         width_preview = 50,
       },
-      options = { use_as_default_explorer = true },
+      options = { use_as_default_explorer = false },
     },
   },
 
@@ -88,7 +88,7 @@ return {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
-      delay = 400,
+      delay = 100,
       plugins = { spelling = true },
       spec = {
         { "<leader>f", group = "find/files" },

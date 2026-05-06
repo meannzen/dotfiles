@@ -10,6 +10,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Compatibility shim for Neovim 0.11+ (removed ft_to_lang)
+if not vim.treesitter.language.ft_to_lang then
+  vim.treesitter.language.ft_to_lang = function(ft)
+    return vim.treesitter.language.get_lang(ft) or ft
+  end
+end
+
 -- Load core config
 require("config.options")
 require("config.keymaps")
@@ -21,7 +28,7 @@ require("lazy").setup("plugins", {
   performance = {
     rtp = {
       disabled_plugins = {
-        "gzip", "matchit", "matchparen", "netrwPlugin",
+        "gzip", "matchit", "matchparen",
         "tarPlugin", "tohtml", "tutor", "zipPlugin",
       },
     },
