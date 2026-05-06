@@ -7,65 +7,80 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
   "show_edit_predictions": false,
   "minimap": {
-    "thumb_border": "right_open"
+    "thumb_border": "right_open",
   },
   "centered_layout": {
-    "left_padding": 0.19999980926513672
+    "left_padding": 0.19999980926513672,
   },
   "bottom_dock_layout": "contained",
   "debugger": {
-    "button": true
+    "button": true,
   },
   "search": {
     "case_sensitive": false,
     "whole_word": false,
-    "button": true
+    "button": true,
   },
   "zoomed_padding": true,
   "preview_tabs": {
-    "enabled": true
+    "enabled": true,
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show": true
+    "show": true,
   },
   "scrollbar": {
     "show": "never",
-    "search_results": true
+    "search_results": true,
   },
   "telemetry": {
     "diagnostics": true,
-    "metrics": true
+    "metrics": true,
   },
   "on_last_window_closed": "quit_app",
   "status_bar": {
     "active_language_button": false,
-    "cursor_position_button": true
+    "cursor_position_button": true,
   },
   "terminal": {
-    "button": true
+    "button": true,
   },
   "diagnostics": {
-    "button": true
+    "button": true,
   },
   "title_bar": {
     "show_sign_in": false,
     "show_user_picture": false,
     "show_onboarding_banner": false,
     "show_branch_name": false,
-    "show_project_items": false
+    "show_project_items": false,
   },
   "project_panel": {
-    "button": true
+    "dock": "left",
+    "button": true,
   },
   "toolbar": {
     "breadcrumbs": false,
     "code_actions": false,
     "agent_review": false,
     "selections_menu": false,
-    "quick_actions": false
+    "quick_actions": false,
   },
   "cursor_shape": "bar",
   "agent_buffer_font_size": 14.0,
@@ -75,21 +90,22 @@
   "buffer_font_family": "Noto Sans",
   "icon_theme": "Material Icon Theme",
   "agent": {
+    "dock": "right",
     "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "openai",
-      "model": "gpt-3.5-turbo"
+      "provider": "opencode",
+      "model": "claude-opus-4-6",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "base_keymap": "VSCode",
-  "ui_font_size": 16,
-  "buffer_font_size": 15.0,
+  "ui_font_size": 18,
+  "buffer_font_size": 18.0,
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
+    "mode": "dark",
+    "light": "macOS Classic Light",
+    "dark": "Carbonfox - blurred",
   },
-  "vim_mode": true
+  "vim_mode": true,
 }
