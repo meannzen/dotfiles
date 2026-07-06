@@ -74,24 +74,13 @@ return {
       vim.lsp.config("rust_analyzer", {
         settings = {
           ["rust-analyzer"] = {
-            checkOnSave = true,
-            check = { command = "clippy" },
-            cargo = { allFeatures = true },
-            procMacro = { enable = true },
           },
         },
       })
 
       -- C / C++
       vim.lsp.config("clangd", {
-        cmd = {
-          "clangd",
-          "--background-index",
-          "--clang-tidy",
-          "--header-insertion=iwyu",
-          "--completion-style=detailed",
-          "--function-arg-placeholders=1",
-        },
+        
       })
 
       vim.lsp.enable({ "rust_analyzer", "clangd" })

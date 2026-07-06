@@ -5,10 +5,10 @@ opt.number = true
 opt.relativenumber = true
 
 -- Indentation (2 spaces)
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
-opt.smartindent = true
+--opt.tabstop = 2
+--opt.shiftwidth = 2
+--opt.expandtab = true
+--opt.smartindent = true
 
 -- Search
 opt.ignorecase = true

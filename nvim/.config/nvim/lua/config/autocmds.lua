@@ -10,15 +10,6 @@ autocmd("TextYankPost", {
 })
 
 -- Remove trailing whitespace on save
-autocmd("BufWritePre", {
-  group = augroup("trim_whitespace", { clear = true }),
-  pattern = "*",
-  callback = function()
-    local save = vim.fn.winsaveview()
-    vim.cmd([[%s/\s\+$//e]])
-    vim.fn.winrestview(save)
-  end,
-})
 
 -- Resize splits on window resize
 autocmd("VimResized", {
