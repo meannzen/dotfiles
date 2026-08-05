@@ -14,7 +14,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     dependencies = { "williamboman/mason.nvim" },
     opts = {
-      ensure_installed = { "rust_analyzer", "clangd" },
+      ensure_installed = { "rust_analyzer", "clangd", "ts_ls", "html", "cssls", "emmet_ls" },
       automatic_installation = true,
     },
   },
@@ -80,10 +80,24 @@ return {
 
       -- C / C++
       vim.lsp.config("clangd", {
-        
+
       })
 
-      vim.lsp.enable({ "rust_analyzer", "clangd" })
+      -- TypeScript / JavaScript
+      vim.lsp.config("ts_ls", {})
+
+      -- HTML
+      vim.lsp.config("html", {})
+
+      -- CSS / SCSS / LESS
+      vim.lsp.config("cssls", {})
+
+      -- Emmet (HTML/CSS/JSX abbreviation expansion)
+      vim.lsp.config("emmet_ls", {
+        filetypes = { "html", "css", "scss", "less", "javascriptreact", "typescriptreact" },
+      })
+
+      vim.lsp.enable({ "rust_analyzer", "clangd", "ts_ls", "html", "cssls", "emmet_ls" })
     end,
   },
 }
