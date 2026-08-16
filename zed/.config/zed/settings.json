@@ -7,19 +7,26 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "helix_mode": false,
+  "minimum_contrast_for_highlights": 32.0,
+  "show_wrap_guides": true,
+  "theme": "Gruvbox Dark Soft",
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
-    }
+      "default_config_options": {
+        "model": "sonnet"
+      },
+      "type": "registry",
+    },
   },
   "show_edit_predictions": false,
   "minimap": {
@@ -84,28 +91,37 @@
   },
   "cursor_shape": "bar",
   "agent_buffer_font_size": 14.0,
-  "buffer_font_weight": 700.0,
+  "buffer_font_weight": 500.0,
   "ui_font_weight": 500.0,
-  "ui_font_family": "Noto Sans Mono",
+  "ui_font_family": "SF Mono Terminal",
   "buffer_font_family": "Noto Sans",
   "icon_theme": "Material Icon Theme",
   "agent": {
     "dock": "right",
-    "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "opencode",
-      "model": "claude-opus-4-6",
+      "provider": "x_ai",
+      "model": "grok-4.3",
     },
     "model_parameters": [],
   },
   "base_keymap": "VSCode",
-  "ui_font_size": 18,
+  "ui_font_size": 17.0,
   "buffer_font_size": 18.0,
-  "theme": {
-    "mode": "dark",
-    "light": "macOS Classic Light",
-    "dark": "Carbonfox - blurred",
-  },
   "vim_mode": true,
+  "languages": {
+    "CSharp": {
+      "language_servers": ["roslyn", "!omnisharp"],
+    },
+  },
+  "lsp": {
+    "roslyn": {
+      "initialization_options": {
+        "RoslynExtensionsOptions": {
+          "enableAnalyzersSupport": true,
+          "enableImportCompletion": true,
+        },
+      },
+    },
+  },
 }

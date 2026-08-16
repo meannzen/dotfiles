@@ -10,6 +10,7 @@ return {
         "bash", "toml", "json", "jsonc",
         "yaml", "markdown", "markdown_inline",
         "regex", "diff",
+        "javascript", "typescript", "tsx", "html", "css", "scss",
       },
       auto_install = true,
       highlight = {
